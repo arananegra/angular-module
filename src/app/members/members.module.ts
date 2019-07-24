@@ -6,11 +6,17 @@ import {
   MemberHeadComponent,
   MembersTableComponent
 } from './members-table';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   declarations: [
     MemberRowComponent,

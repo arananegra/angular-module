@@ -10,7 +10,7 @@ import { MembersApiService } from '../members-api.service';
 })
 export class MembersTableComponent {
   members: MemberEntity[];
-
+  organization = '';
   constructor(private membersApi: MembersApiService) { }
 
   loadMembers() {
