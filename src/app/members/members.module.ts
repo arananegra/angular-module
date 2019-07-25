@@ -7,7 +7,7 @@ import {
   MembersTableComponent
 } from './members-table';
 import { FormsModule } from '@angular/forms';
-import { MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatTableModule } from '@angular/material';
 
 @NgModule({
   imports: [
