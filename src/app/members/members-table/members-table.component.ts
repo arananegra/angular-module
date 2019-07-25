@@ -11,10 +11,11 @@ import { MembersApiService } from '../members-api.service';
 export class MembersTableComponent {
   members: MemberEntity[];
   organization = '';
+  displayedColumns: string[] = ['id', 'login', 'avatar_url'];
   constructor(private membersApi: MembersApiService) { }
 
   loadMembers() {
-    this.membersApi.getAllMembers('lemoncode')
+    this.membersApi.getAllMembers(this.organization)
       .subscribe((ms) => this.members = ms);
   }
 
